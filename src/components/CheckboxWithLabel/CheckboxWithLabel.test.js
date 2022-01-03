@@ -10,7 +10,8 @@ it('CheckboxWithLabel changes the text after click', () => {
   render(
     <CheckboxWithLabel labelOn="On" labelOff="Off" />,
   );
-
+  
+  // get element have label 'off' case insensitive
   expect(screen.getByLabelText(/off/i)).toBeTruthy();
 
   fireEvent.click(screen.getByLabelText(/off/i));

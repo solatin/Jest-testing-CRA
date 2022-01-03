@@ -4,6 +4,8 @@ import React from 'react';
 import Link from './Link';
 import renderer from 'react-test-renderer';
 
+// The first time toMatchSnapshot is run, Jest creates a snapshot file. 
+// On subsequent test runs, Jest will compare the rendered output with the previous snapshot. If they match, the test will pass
 it('renders correctly', () => {
   const tree = renderer
     .create(<Link page="http://www.facebook.com">Facebook</Link>)
@@ -16,6 +18,7 @@ it('renders as an anchor when no page is set', () => {
   expect(tree).toMatchSnapshot();
 });
 
+// toMatchInlineSnapshot is similar to toMatchSnapshot, except the snapshot values are written automatically back into the source code.
 it('properly escapes quotes', () => {
   const tree = renderer
     .create(<Link>{"\"Facebook\" \\'is \\ 'awesome'"}</Link>)
