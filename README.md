@@ -21,4 +21,6 @@ You may also see any lint errors in the console.
 Test file: https://github.com/solatin/Jest-testing-CRA/blob/main/src/components/Link/link.test.js
 2. Dom tesing. An implement of https://jestjs.io/docs/tutorial-react#dom-testing \
 Test file: https://github.com/solatin/Jest-testing-CRA/blob/main/src/components/CheckboxWithLabel/CheckboxWithLabel.test.js
+3. Function testing. \
+Test file: https://github.com/solatin/Jest-testing-CRA/blob/main/src/utils/utils.test.js
 
